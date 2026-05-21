@@ -115,19 +115,11 @@ img, svg { display: block; max-width: 100%; }
 .logo-mark {
   width: 22px;
   height: 22px;
-  border-radius: 5px;
-  background: linear-gradient(135deg, var(--blue) 0%, #1851C9 100%);
-  box-shadow: 0 0 16px rgba(46, 124, 255, 0.4);
-  position: relative;
-}
-.logo-mark::after {
-  content: '';
-  position: absolute;
-  inset: 4px;
-  border: 1.5px solid rgba(255, 255, 255, 0.9);
-  border-radius: 2px;
-  border-right: none;
-  border-bottom: none;
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='k' gradientUnits='userSpaceOnUse' x1='14' y1='12' x2='86' y2='90'%3E%3Cstop offset='0' stop-color='%235AB4FF'/%3E%3Cstop offset='.55' stop-color='%233A86FF'/%3E%3Cstop offset='1' stop-color='%231C50D6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='14,12 33,12 33,66 22,90 14,90' fill='url(%23k)'/%3E%3Cpolygon points='40,40 86,12 86,30 40,58' fill='url(%23k)'/%3E%3Cpolygon points='40,42 86,70 86,88 40,60' fill='url(%23k)'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* ------------------------------------------------------------------
@@ -422,6 +414,16 @@ section { padding: 140px 0; position: relative; }
   color: var(--text-muted);
   max-width: 560px;
   line-height: 1.6;
+}
+
+/* Caption for illustrative product visuals / demo data */
+.visual-caption {
+  text-align: center;
+  margin-top: 20px;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
 }
 
 /* ------------------------------------------------------------------

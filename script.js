@@ -185,7 +185,7 @@
       // Read access key from the hidden field
       const accessKey = form.querySelector('input[name="access_key"]');
       if (!accessKey || !accessKey.value || accessKey.value === 'YOUR_WEB3FORMS_ACCESS_KEY_HERE') {
-        showError('Form not yet configured. Please email hello@krynex.systems directly.');
+        showError('Form not yet configured. Please email hello@krynexsystems.com directly.');
         return;
       }
 
@@ -223,7 +223,7 @@
           submitBtn.disabled = false;
           submitBtn.innerHTML = originalBtnHTML;
         }
-        showError('Something went wrong. Please email hello@krynex.systems directly.');
+        showError('Something went wrong. Please email hello@krynexsystems.com directly.');
       }
     });
 
